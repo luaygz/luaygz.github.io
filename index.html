@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luay Gharzeddine · AI Engineer</title>
+  <meta name="description" content="Luay Gharzeddine is an AI engineer building production LLM systems: multi-agent orchestration, text-to-SQL, retrieval, and the evals and guardrails that make them safe to ship. TMLR 2026.">
+  <meta name="author" content="Luay Gharzeddine">
+  <link rel="canonical" href="https://luaygz.com/">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://luaygz.com/">
+  <meta property="og:title" content="Luay Gharzeddine · AI Engineer">
+  <meta property="og:description" content="Production LLM systems: multi-agent orchestration, text-to-SQL, retrieval, evals and guardrails. TMLR 2026.">
+  <meta property="og:image" content="https://luaygz.com/assets/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Luay Gharzeddine, AI engineer building production LLM systems">
+  <meta property="profile:first_name" content="Luay">
+  <meta property="profile:last_name" content="Gharzeddine">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Luay Gharzeddine · AI Engineer">
+  <meta name="twitter:description" content="Production LLM systems: multi-agent orchestration, text-to-SQL, retrieval, evals and guardrails. TMLR 2026.">
+  <meta name="twitter:image" content="https://luaygz.com/assets/img/og.jpg">
+
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Luay Gharzeddine",
+    "url": "https://luaygz.com/",
+    "image": "https://luaygz.com/assets/img/luay.jpg",
+    "jobTitle": "AI Engineer",
+    "address": { "@type": "PostalAddress", "addressLocality": "Beirut", "addressCountry": "LB" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "American University of Beirut" },
+    "sameAs": [
+      "https://github.com/luaygz",
+      "https://www.linkedin.com/in/luaygz"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <main id="main" class="wrap">
+
+    <!-- 1. Header -->
+    <header class="hero">
+      <div class="hero-text">
+        <h1>Luay Gharzeddine</h1>
+        <p class="tagline">AI engineer building production LLM systems: multi-agent orchestration, text-to-SQL, retrieval, and the evals and guardrails that make them safe to ship.</p>
+        <p class="meta">Beirut, Lebanon <span aria-hidden="true">·</span> UTC+2</p>
+        <nav class="links" aria-label="Profiles">
+          <a href="https://github.com/luaygz">GitHub</a>
+          <a href="https://www.linkedin.com/in/luaygz">LinkedIn</a>
+          <a href="https://openreview.net/forum?id=FAkarhXCfI">TMLR paper</a>
+          <a href="mailto:luaygharzeddine@gmail.com">Email</a>
+        </nav>
+      </div>
+      <img class="avatar" src="/assets/img/luay.jpg" width="160" height="160" alt="Portrait of Luay Gharzeddine">
+    </header>
+
+    <!-- 2. Short bio -->
+    <section class="bio" aria-label="About">
+      <p>I build LLM systems for regulated industries. I designed the orchestration layer for a bank's customer-facing AI assistant, covering 20+ banking workflows; built clinical documentation tools that cut physicians' report drafting from 20 minutes to under 5; and built a multi-agent automation platform where I reduced LLM costs 8x. My research on multi-agent task decomposition was published in <em>Transactions on Machine Learning Research</em> (2026).</p>
+      <p>I care about measuring things properly. Every project below ships with reproducible evaluations, honest baselines, and the numbers to back its claims.</p>
+    </section>
+
+    <!-- 4. Research -->
+    <section id="research" aria-labelledby="research-h">
+      <h2 id="research-h">Research</h2>
+
+      <article class="paper">
+        <p class="venue">TMLR 2026</p>
+        <h3><a href="https://openreview.net/forum?id=FAkarhXCfI">Complete Cyclic Subtask Graphs for Tool-Using LLM Agents: Flexibility, Cost, and Bottlenecks in Long-Horizon Workflows</a></h3>
+        <p class="authors"><strong>Luay Gharzeddine</strong>, Samer Saab Jr. <span aria-hidden="true">·</span> <em>Transactions on Machine Learning Research</em>, 2026</p>
+        <p>Long-horizon tool-using tasks sometimes benefit from revisiting earlier subtasks, but revisiting costs routing, coordination and tokens. The paper studies complete cyclic subtask graphs, in which every subtask can hand off to every other and a single router picks each transition by checking natural-language criteria, and compares them with ReAct and dependency-ordered graphs on TextCraft, ALFWorld and Finance-Agent.</p>
+        <p>Cyclic graphs raise ALFWorld success from 33.8% (ReAct) to 58.2%, and the benchmark-generic graph keeps 87-96% of its TextCraft success when half of its routing decisions are replaced at random. ReAct stays stronger and cheaper on TextCraft; the paper maps where revisiting pays for itself and what it costs.</p>
+        <p class="actions">
+          <a href="https://openreview.net/forum?id=FAkarhXCfI">OpenReview</a>
+          <a href="https://openreview.net/pdf?id=FAkarhXCfI">PDF</a>
+          <a href="https://github.com/luaygz/cyclic_task_graphs">Code</a>
+        </p>
+        <details>
+          <summary>BibTeX</summary>
+<pre><code>@article{gharzeddine2026cyclic,
+  title   = {Complete Cyclic Subtask Graphs for Tool-Using {LLM} Agents: Flexibility, Cost, and Bottlenecks in Long-Horizon Workflows},
+  author  = {Gharzeddine, Luay and Saab Jr, Samer},
+  journal = {Transactions on Machine Learning Research},
+  year    = {2026},
+  url     = {https://openreview.net/forum?id=FAkarhXCfI}
+}</code></pre>
+        </details>
+      </article>
+
+      <article class="paper">
+        <p class="venue">Submitted</p>
+        <h3>BeatPredict</h3>
+        <p class="authors"><strong>Luay Gharzeddine</strong> (first author)</p>
+        <p>A leakage-safe ECG dataset and machine-learning and deep-learning benchmarks for predicting arrhythmia in the next heartbeat.</p>
+      </article>
+    </section>
+
+    <!-- 3. Selected projects -->
+    <section id="projects" aria-labelledby="projects-h">
+      <h2 id="projects-h">Selected projects</h2>
+
+      <article class="project">
+        <div class="project-head">
+          <h3><a href="https://github.com/luaygz/cyclic_task_graphs">cyclic_task_graphs</a></h3>
+          <p class="lede">The paper's reference implementation and full experiment harness.</p>
+        </div>
+        <figure class="figure diagram" aria-label="Planner, executor and router loop">
+          <svg viewBox="0 0 640 210" role="img" aria-labelledby="ctg-title">
+            <title id="ctg-title">A planner builds subtasks and transition criteria; an executor runs the current subtask with tools; a router updates memory and picks the next subtask, looping until the goal is reached or the budget runs out.</title>
+            <defs>
+              <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+              </marker>
+            </defs>
+            <g fill="none" stroke="currentColor" stroke-width="1.6">
+              <rect x="10" y="80" width="150" height="56" rx="10"/>
+              <rect x="245" y="80" width="150" height="56" rx="10" class="accent-stroke"/>
+              <rect x="480" y="80" width="150" height="56" rx="10"/>
+              <line x1="160" y1="108" x2="243" y2="108" marker-end="url(#arrow)"/>
+              <path d="M395,96 C430,60 450,60 478,96" marker-end="url(#arrow)"/>
+              <path d="M478,122 C450,158 430,158 397,122" marker-end="url(#arrow)"/>
+              <line x1="320" y1="136" x2="320" y2="178" marker-end="url(#arrow)"/>
+            </g>
+            <g fill="currentColor" font-size="15" text-anchor="middle" font-family="inherit">
+              <text x="85" y="104" font-weight="600">Planner</text>
+              <text x="85" y="123" font-size="11.5" class="muted-fill">subtasks + criteria</text>
+              <text x="320" y="104" font-weight="600">Executor</text>
+              <text x="320" y="123" font-size="11.5" class="muted-fill">tool calls, local budget</text>
+              <text x="555" y="104" font-weight="600">Router</text>
+              <text x="555" y="123" font-size="11.5" class="muted-fill">memory + next subtask</text>
+              <text x="437" y="56" font-size="11.5" class="muted-fill">segment trace</text>
+              <text x="437" y="172" font-size="11.5" class="muted-fill">next subtask</text>
+              <text x="320" y="200" font-size="12">goal reached or global budget used</text>
+            </g>
+          </svg>
+        </figure>
+        <p>A workflow controller in which every subtask can transition to every other, compared against ReAct and dependency-ordered DAGs. Every table and ablation in the paper (about 33,600 episodes across eight experiment families) reproduces from YAML configs, with dry-run cost estimates, spend caps, resumable runs and an analysis CLI that regenerates the paper's tables.</p>
+        <ul class="stats">
+          <li><strong>58.2%</strong><span>ALFWorld success, vs 33.8% for ReAct</span></li>
+          <li><strong>87-96%</strong><span>of TextCraft success kept under random routing faults</span></li>
+          <li><strong>3</strong><span>benchmarks: TextCraft, ALFWorld, Finance-Agent</span></li>
+        </ul>
+        <p class="actions">
+          <a href="https://github.com/luaygz/cyclic_task_graphs">Repository</a>
+          <a href="https://openreview.net/forum?id=FAkarhXCfI">Paper</a>
+        </p>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3><a href="https://github.com/luaygz/text2sql-cfg">text2sql-cfg</a></h3>
+          <p class="lede">Text-to-SQL where the model cannot write an unsafe query.</p>
+        </div>
+        <figure class="figure terminal">
+          <img src="/assets/img/text2sql-demo.gif" width="1020" height="1080" loading="lazy" decoding="async" alt="Terminal recording: a BIRD question answered by the pipeline, then a prompt injection that the model refuses and the grammar rejects">
+        </figure>
+        <p>The model can only write SQL through an OpenAI custom tool constrained by a Lark grammar built from the database schema, so writes, stacked statements, comments and unknown columns cannot be sampled at all. Three more layers assume the grammar failed anyway: an AST validator, a read-only sandboxed executor, and tenant scoping injected by the server, so the model never sees a tenant id. Every number reproduces offline from a committed response cache, with no API key.</p>
+        <ul class="stats">
+          <li><strong>85.2%</strong><span>held-out accuracy on corrected BIRD Mini-Dev labels (68.0% on original labels)</span></li>
+          <li><strong>$0.0014</strong><span>per question</span></li>
+          <li><strong>0 of 275</strong><span>adversarial attacks reached the database or leaked tenant data</span></li>
+        </ul>
+        <p class="actions">
+          <a href="https://github.com/luaygz/text2sql-cfg">Repository</a>
+          <a href="https://github.com/luaygz/text2sql-cfg/blob/main/RESULTS.md">Results</a>
+          <a href="https://github.com/luaygz/text2sql-cfg/blob/main/docs/THREAT_MODEL.md">Threat model</a>
+        </p>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3><a href="https://github.com/luaygz/ditto">ditto</a></h3>
+          <p class="lede">Extract a whole website into JSON with about one LLM call per page template.</p>
+        </div>
+        <figure class="figure">
+          <picture>
+            <source srcset="/assets/img/ditto-cost-f1.webp" type="image/webp">
+            <img src="/assets/img/ditto-cost-f1.png" width="1500" height="580" loading="lazy" decoding="async" alt="Chart of LLM cost per 1,000 pages against F1: ditto matches per-page LLM extraction at a small fraction of the cost">
+          </picture>
+          <figcaption>LLM cost per 1,000 pages (log scale) against F1, from the repository's benchmark report.</figcaption>
+        </figure>
+        <p>ditto clusters a site's pages by template, shows an LLM one compressed page per template, and gets back reusable XPath specs. It verifies every selector on every page, repairs what fails, and then extracts the whole site with no LLM at all. Benchmarked on SWDE, a Common Crawl silver set and live sites against Crawl4AI, AutoScraper, per-page LLM extraction and hand-written XPath.</p>
+        <ul class="stats">
+          <li><strong>0.846</strong><span>F1 on the SWDE test split, vs 0.845 for per-page LLM extraction</span></li>
+          <li><strong>$0.08</strong><span>per 1,000 pages, vs $22.59</span></li>
+          <li><strong>~290x</strong><span>cheaper at the same accuracy</span></li>
+        </ul>
+        <p class="actions">
+          <a href="https://github.com/luaygz/ditto">Repository</a>
+          <a href="https://github.com/luaygz/ditto#results">Benchmarks</a>
+        </p>
+      </article>
+    </section>
+
+    <!-- 6. Experience -->
+    <section id="experience" aria-labelledby="experience-h">
+      <h2 id="experience-h">Experience</h2>
+      <ol class="timeline">
+        <li>
+          <div class="role"><h3>Senior AI Engineer</h3><span class="when">2026 - present</span></div>
+          <p class="org">X-Tends <span aria-hidden="true">·</span> fintech</p>
+          <p>LLM orchestration for a bank's customer-facing assistant: intent routing and specialist agents across 20+ banking workflows, safety controls for regulated actions (RAG grounding, approved tools, audit logs, human review), a multilingual voice assistant, and a read-only, tenant-scoped SQL agent for transaction analytics.</p>
+        </li>
+        <li>
+          <div class="role"><h3>AI Engineer</h3><span class="when">2024 - 2026</span></div>
+          <p class="org">Waicah <span aria-hidden="true">·</span> medical AI startup</p>
+          <p>Clinical documentation that turns consultations into physician-ready reports (drafting time from 20 minutes to under 5), a fine-tuned report model with evaluation workflows (physician ratings from 3.8 to 4.5 out of 5), a physician-approved intake chatbot, and extraction agents that let physicians review cases 2-3x faster.</p>
+        </li>
+        <li>
+          <div class="role"><h3>AI Engineer, then director-level</h3><span class="when">2024</span></div>
+          <p class="org">Tenn.ai</p>
+          <p>Multi-agent platform for automating business workflows: an intent-to-workflow engine powering 40+ workflows at a 90%+ completion rate, and an 8x cut in LLM costs through prompt caching, context summarization and complexity-based model routing. Promoted to a director-level role after four months.</p>
+        </li>
+        <li class="edu">
+          <div class="role"><h3>BSc Computer Science</h3><span class="when">2021</span></div>
+          <p class="org">American University of Beirut</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 7. Contact -->
+    <section id="contact" aria-labelledby="contact-h">
+      <h2 id="contact-h">Contact</h2>
+      <p>The best way to reach me is email: <a href="mailto:luaygharzeddine@gmail.com">luaygharzeddine@gmail.com</a>. I'm also on <a href="https://www.linkedin.com/in/luaygz">LinkedIn</a> and <a href="https://github.com/luaygz">GitHub</a>.</p>
+    </section>
+
+  </main>
+
+  <footer class="wrap footer">
+    <p>© 2026 Luay Gharzeddine</p>
+  </footer>
+</body>
+</html>
